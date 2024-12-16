@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hedelmäpeli</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container text-center py-5">
+        <h1 class="mb-4">Hedelmäpeli</h1>
+        <div id="gameContainer" class="card shadow-sm p-4">
+            <div id="balance" class="fs-4 mb-3">Balance: €100</div>
+            <div class="d-flex justify-content-center reels mb-4">
+                <div class="reel" data-index="0">🍎</div>
+                <div class="reel" data-index="1">🍎</div>
+                <div class="reel" data-index="2">🍎</div>
+                <div class="reel" data-index="3">🍎</div>
+            </div>
+            <div class="mb-3">
+                <input type="number" id="bet" class="form-control w-25 mx-auto" placeholder="Bet (1-10€)" />
+            </div>
+
+            <div class="d-flex justify-content-center mb-3">
+                <button id="playButton" class="btn btn-primary w-50">Spin</button>
+            </div>
+
+            <div id="message" class="text-danger"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

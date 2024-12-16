@@ -1,0 +1,46 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.reel {
+    width: 60px;
+    height: 60px;
+    font-size: 2em;
+    text-align: center;
+    line-height: 60px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reel.locked {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+}
+
+.reels {
+    gap: 15px;
+}
+
+#balance {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+#message {
+    font-size: 1.2em;
+    margin-top: 15px;
+    color: red;
+}
+
+input {
+    max-width: 150px;
+}
